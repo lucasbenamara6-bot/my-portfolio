@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0a0a0f;
+    color: #e0e0e0;
+    scroll-behavior: smooth;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 15px 0;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav a {
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    color: #66ccff;
+}
+
+
+#accueil {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00bfff;
+    box-shadow: 0 0 20px #00bfff;
+    margin-bottom: 20px;
+}
+
+
+#accueil h1 {
+    font-size: 3em;
+    color: #00bfff;
+    margin: 10px 0;
+}
+
+
+#accueil p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+
+#accueil h2 {
+    font-size: 1.4em;
+    color: #66ccff;
+    margin-top: 10px;
+}
+
+
+.icones {
+    margin-top: 20px;
+}
+
+
+.icones a {
+    color: #00bfff;
+    font-size: 1.8em;
+    margin: 0 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+
+.icones a:hover {
+    color: #66ccff;
+    transform: scale(2);
+}
+
+
+#projets {
+    padding: 100px 0;
+    background-color: #111;
+    text-align: center;
+}
+
+
+#projets h2 {
+    font-size: 2.2em;
+    color: #00bfff;
+    margin-bottom: 40px;
+}
+
+
+.projets-container {
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.projet-card {
+    background-color: #1a1a1f;
+    border: 2px solid #00bfff;
+    border-radius: 15px;
+    height: 200px;
+    box-shadow: 0 0 10px #00bfff33;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.projet-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px #00bfff;
+}
+
+
+@media (max-width: 900px) {
+    .projets-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .projets-container {
+        grid-template-columns: 1fr;
+    }
+    #accueil h1 {
+        font-size: 2em;
+    }
+    #projets {
+        padding: 40px 10px;
+    }
+}
+
+
