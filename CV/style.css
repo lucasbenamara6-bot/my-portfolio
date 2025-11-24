@@ -1,0 +1,113 @@
+body {
+    background : #080535;
+    display : flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+
+.container {
+    display:flex;
+    max-width: 1024px;
+    width: 100%;
+    background : rgb(48, 15, 94);
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    background: darkblue;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.sidebar {
+    background : #1a1530;
+    padding: 20px;
+    width: 300px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.sidebar h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, rgba(34, 0, 36, 1) 0%, rgba(72, 19, 145, 1) 0%, rgba(87, 9, 121, 1) 49%, rgba(0, 212, 255, 1) 100%);
+    border-bottom: 3px solid purple;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.sidebar .titre {
+    color:blueviolet;
+    margin-bottom: 10px;
+}
+
+.sidebar .contact {
+    margin-bottom: 15px;
+}
+
+.skills {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.main {
+    flex: 1;
+    padding: 30px;
+}
+
+.picture img {
+    width: 150px;
+    height : 150px;
+    object-fit : cover;
+    margin-bottom : 10px;
+    border-radius: 50%;
+}
+
+.experience {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: rgb(41, 4, 67);
+
+}
+
+h2 {
+    background: linear-gradient(90deg, rgba(34, 0, 36, 1) 0%, rgba(72, 19, 145, 1) 0%, rgba(87, 9, 121, 1) 49%, rgba(0, 212, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid darkblue;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.etude {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: rgb(41, 4, 67);
+
+}
+
+
+ul {
+    padding-left: 20px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction:column;
+    }
+    .sidebar {
+        width: 100%;
+    }
+}
